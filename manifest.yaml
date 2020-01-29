@@ -6,7 +6,6 @@ applications:
     disk_quota: 512m
     env:
       AUTHOR: Pavan Bhamidipati
-      EMAIL: pawanchandsap@gmail.com
     instances: 1
     memory: 512m
     name: pb-busisols-empsrvc
