@@ -1,0 +1,19 @@
+---
+applications:
+  - buildpacks:
+      - nodejs_buildpack
+    command: 'npm start'
+    disk_quota: 512m
+    env:
+      AUTHOR: Pavan Bhamidipati
+      EMAIL: pawanchandsap@gmail.com
+    instances: 1
+    memory: 512m
+    name: pb-busisols-empsrvc
+    no-route: false
+    random-route: false
+    routes:
+      - route: pb-busisols-empsrvc.cfapps.io
+    services:
+      - mymongodb
+    stack: cflinuxfs3
